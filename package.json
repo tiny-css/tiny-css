@@ -4,7 +4,7 @@
   "description": "The css stylesheet library of @tiny-css",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "build": "rollup -c"
   },
   "keywords": [
     "css",
