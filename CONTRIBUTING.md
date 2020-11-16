@@ -4,11 +4,11 @@ When contributing to this repository, please first discuss the change you wish t
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 ## Code of Conduct
-The code of conduct is described in [CODE_OF_CONDUCT.md](#)
+The code of conduct is described in [CODE_OF_CONDUCT.md](https://github.com/tiny-css/tiny-css/blob/master/CODE_OF_CONDUCT.md)
 
 
 ## What do I need to know to help?
-If you are looking to help to with a code contribution. This porject uses **CSS3, Javascript, TypeScript and Node**. If you don't feel ready to make a code contribution yet, no problem! You can also check out the [documentation issues](#) or the design issues that we have [here](#).
+If you are looking to help to with a code contribution. This porject uses **CSS3, Javascript, TypeScript and Node**. If you don't feel ready to make a code contribution yet, no problem! You can also check out the [documentation issues](https://github.com/tiny-css/tiny-css/issues) or the design issues that we have [here](#).
 
 If you are interested in making a code contribution and would like to learn more about the technologies that we use, check out the list below.
 
