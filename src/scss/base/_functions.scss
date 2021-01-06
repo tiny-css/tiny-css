@@ -1,0 +1,50 @@
+@use "sass:list";
+@use "sass:color";
+@import "../theme/basic-theme";
+
+@function setBGAgnosticFG($bg) {
+  @if(lightness($bg)>55%) {
+    @return $text-dark;
+  }
+
+  @return $text-light;
+}
+
+@function mappedClass($map, $prefix:"", $suffix:"") {
+  $class-list: null;
+
+  @each $key,
+  $value in $map {
+    $class-list: list.append($class-list, ".#{$prefix}#{$key}#{$suffix}", $separator: comma);
+  }
+
+  @return $class-list;
+}
+
+@function listPrefixSuffix($list, $prefix: "", $suffix: "") {
+  $return-list: null;
+
+  @each $child in $list {
+    $return-var: list.append($return-list, "#{$prefix}#{$child}#{$suffix}")
+  }
+
+  @return $return-var;
+}
+
+@function mapPrefixSuffix($map, $prefix: "", $suffix: "", $return-type: "value") {
+  $keys: null;
+  $values: null;
+  @if($return-type=="key") {
+    @each $key in $map {
+      $keys: list-append($keys, "#{$prefix}#{$key}#{$suffix}");
+    }
+    @return $keys;
+  }
+
+  @if($return-type=="value"){
+    @each $key, $value in $map {
+      $values: list-append($values, "#{$prefix}#{$value}#{$suffix}");
+    }
+    @return values;
+  }
+}

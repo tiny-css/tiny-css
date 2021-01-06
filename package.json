@@ -4,7 +4,8 @@
   "description": "CSS stylesheets of @tiny-css",
   "main": "index.js",
   "scripts": {
-    "dev": "sass src/scss/main.scss src/css/style.css --watch --no-source-map",
+    "dev": "npx nodemon -w \"./src/scss\" --ext \"scss\" --exec \"ts-node scripts/recursive_build.ts\"",
+    "clean:css": "npx rimraf src/scss/**/*.css -g && npx rimraf src/scss/**/*.css.map -g",
     "compile": "sass src/scss/main.scss src/css/style.css --no-source-map",
     "compile:optimized": "sass src/scss/main.scss src/css/style.css --no-source-map --style=compressed",
     "build": "rollup -c"
@@ -17,8 +18,14 @@
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-typescript": "^6.1.0",
+    "@types/glob": "^7.1.3",
+    "@types/sass": "^1.16.0",
+    "glob": "^7.1.6",
+    "nodemon": "^2.0.6",
+    "rimraf": "^3.0.2",
     "rollup": "^2.33.2",
     "sass": "^1.29.0",
+    "ts-node": "^9.1.1",
     "typescript": "^4.0.5"
   }
 }

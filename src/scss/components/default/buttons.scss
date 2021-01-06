@@ -1,0 +1,65 @@
+@use "sass:list";
+@use '../../base/functions'as *;
+@import '../../theme/basic-theme';
+
+$btn-map: ("primary": $primary, "secondary": $secondary, "success": $success, "danger": $danger, "warning": $warning, "chill": $chill);
+
+.btn {
+  border-radius: #{$radius-const}px;
+  padding: 10px;
+}
+
+.btn,
+.link {
+  border: none;
+  transition: $transition-duration $animation-curve all;
+  outline: none;
+
+  &:active {
+    transform: scale($scale-const);
+  }
+}
+
+.link {
+  border-bottom: $border-prop;
+}
+
+#{mapPrefixSuffix($btn-map, null, "-bordered", $return-type: key)}{
+  background: transparent;
+}
+
+@each $classname,
+$color in $btn-map {
+  .#{$classname} {
+    background: $color;
+    color: setBGAgnosticFG($color);
+
+    &:hover {
+      $hover-bg: darken($color, $darken-const);
+      background: $hover-bg;
+      color: setBGAgnosticFG($hover-bg);
+    }
+  }
+
+  .#{$classname}-bordered {
+    border: $border-prop $color;
+    background: transparent;
+    color: $color;
+
+    &:hover {
+      background: $color;
+      color: setBGAgnosticFG($color);
+    }
+  }
+
+  .#{$classname}-link {
+    border-bottom-color: $color;
+    color: $color;
+
+    &:hover {
+      $darken-value: darken($color: $color, $amount: $darken-const);
+      border-bottom-color: $darken-value;
+      color: $darken-value;
+    }
+  }
+}
