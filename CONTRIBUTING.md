@@ -1,6 +1,6 @@
 # Contributing
 
-When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
+When contributing to this repository, please first discuss the change you wish to make via issue, or simply creating a issue based on that feature (use the **feature** tag to indicate its a feature request) with the owners of this repository before making a change.
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 ## Code of Conduct
@@ -8,12 +8,11 @@ The code of conduct is described in [CODE_OF_CONDUCT.md](https://github.com/tiny
 
 
 ## What do I need to know to help?
-If you are looking to help to with a code contribution. This porject uses **CSS3, Javascript, TypeScript and Node**. If you don't feel ready to make a code contribution yet, no problem! You can also check out the [documentation issues](https://github.com/tiny-css/tiny-css/issues) or the design issues that we have [here](#).
+If you are looking to help to with a code contribution. This porject uses **CSS3, SCSS, Javascript, TypeScript, Rollup & Node**. If you don't feel ready to make a code contribution yet, no problem! You can also check out the [documentation issues](https://github.com/tiny-css/tiny-css/issues) or the design issues that we have [here](#).
 
 If you are interested in making a code contribution and would like to learn more about the technologies that we use, check out the list below.
 
 * [A First Timers Guide to an Open Source Project](https://auth0.com/blog/a-first-timers-guide-to-an-open-source-project/) by Luke Oliff.
-* [Add resource here](link here) by author here.
 
 ## How do I make a contribution?
 Never made an open source contribution before? Wondering how contributions work in the in our project? Here's a quick rundown!
@@ -21,7 +20,7 @@ Never made an open source contribution before? Wondering how contributions work 
 1. Find an issue that you are interested in addressing or a feature that you would like to add.
 2. Fork the repository associated with the issue to your local GitHub organization or repository. This means that you will have a copy of the repository under **your-GitHub-username/tiny-css**.
 3. Clone the repository to your local machine using git clone https://github.com/github-username/tiny-css.git.
-4. Create a new branch for your fix using **git checkout -b branch-name-here**.
+4. **[!Important]**: Create a new branch for your fix using **git checkout -b branch-name-here**.
 5. Make the appropriate changes for the issue you are trying to address or the feature that you want to add.
 6. Use **git add insert-paths-of-changed-files-here** to add the file contents of the changed files to the "snapshot" git uses to manage the state of the project, also known as the index.
 7. Use **git commit -m "Insert a short message of the changes made here"** to store the contents of the index with a descriptive message.
@@ -35,7 +34,7 @@ Never made an open source contribution before? Wondering how contributions work 
 
 ## Where can I go for help?
 
-If you need help, you can ask questions on our mailing list, Discord [server](https://discord.gg/S2w7DY2M) chat, or simply email us at krtirtho@gmail.com.
+If you need help, you can ask questions on our Discord [server](https://discord.gg/CnF733MX) chat
 
 ## What does the Code of Conduct mean for me?
 
